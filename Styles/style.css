@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Zilla Slab', serif;
+}
+
+:root {
+        --cor-primaria: #c6bff1;
+        --cor-secundaria: #353348;
+        --cor-terciaria:#7d76a6;
+        --cor-hover:#938ec0;
+        --cor-links:#857cb2;
+        }
+
+body{
+    height: 50vh;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+}
+
+.apresentacao{
+    margin: 6% 30% 6% 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2,25rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__conteudo__subtitulo {
+    font-size: 1,25rem;
+    font-weight: 100;
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1rem;
+    font-weight: 100;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    gap: 1rem;
+}
+
+.conteudo__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-links);
+    width: 14rem;
+    padding: 8px 0;
+    border: 1px solid var(--cor-hover);
+}
+
+.conteudo__links__link:hover {
+    background-color: var(--cor-hover);
+    border: 1px hidden;
+
+}
+
+.avatar {
+    height: 14rem;
+    width: 12rem;
+    object-fit:cover;
+    object-position: 30% 0%;
+    border-radius: 1rem;
+    outline: var(--cor-terciaria);
+    outline-offset: 2px;
+    outline-style: double;
+}
+
+.icone {
+    height:1rem;
+}
+
+.rodape {
+    padding: 5% 5%;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    font-weight: 100;
+    text-align: center;
+}
+
+.cabecalho {
+    padding: 3% 3% 3% 20%;
+    background-color:var(--cor-primaria);
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+    .apresentacao__conteudo {
+    width: auto;
+    }
+
+    .cabecalho {
+    padding: 2.5%;
+    }
+
+    .cabecalho__menu {
+    justify-content: center;
+    width: 100%;
+    gap: 0.6rem;
+
+    }
+
+    .apresentacao {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+
+}
